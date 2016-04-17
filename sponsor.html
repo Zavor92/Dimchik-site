@@ -6,6 +6,12 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>	
+		<script type="text/javascript" src=" https://yastatic.net/jquery/2.2.3/jquery.min.js"></script>
+	    <script type="text/javascript" src="js/carusel.js"></script>
+	    <script type="text/javascript" src="js/valid.js"></script>
+	    <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+		<link rel="stylesheet" href="js/jquery.arcticmodal-0.3.css">
+		<link rel="stylesheet" href="js/themes/simple.css">	
 	</head>
 	<body>
 	<div id="header">
@@ -133,6 +139,20 @@
 			</div>
 		</div>
 		<div id="footer">
+		<div style="display: none;">
+	    <div class="box-modal" id="failModal">
+	        	<div class="box-modal_close arcticmodal-close">закрыть</div>
+	        	Вы ввели не все данные
+	    		</div>
+		</div>
+
+		<div style="display: none;">
+		 <div class="box-modal" id="phoneModal">
+	        	<div class="box-modal_close arcticmodal-close">закрыть</div>
+	        	Неверно введен номер телефона!
+	    		</div>
+		</div>
+
 			<div class="wrapper">
 				<div class="footer-menu">
 					<div class="about-forum">
@@ -196,6 +216,7 @@
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 	</body>
 </html>

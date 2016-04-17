@@ -1,9 +1,15 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<link href="style.css" rel="stylesheet">	
+		<link href="style.css" rel="stylesheet">
+		<script type="text/javascript" src=" https://yastatic.net/jquery/2.2.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/valid.js"></script>
+		<script src="js/jquery.arcticmodal-0.3.min.js"></script>
+		<link rel="stylesheet" href="js/jquery.arcticmodal-0.3.css">
+		<link rel="stylesheet" href="js/themes/simple.css">	
 	</head>
 	<body>
+	<div class="page-wrapper">
 	<div id="header">
 			<div class="wrapper">
 				<div class="fac-logo">
@@ -164,7 +170,23 @@
 				</div>
 			</div>
 		</div>
+		</div>
+
 		<div id="footer">
+		<div style="display: none;">
+	    <div class="box-modal" id="failModal">
+	        	<div class="box-modal_close arcticmodal-close">закрыть</div>
+	        	Вы ввели не все данные
+	    		</div>
+		</div>
+
+		<div style="display: none;">
+		 <div class="box-modal" id="phoneModal">
+	        	<div class="box-modal_close arcticmodal-close">закрыть</div>
+	        	Неверно введен номер телефона!
+	    		</div>
+		</div>
+
 			<div class="wrapper">
 				<div class="footer-menu">
 					<div class="about-forum">
@@ -228,6 +250,7 @@
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 	</body>
 </html>		

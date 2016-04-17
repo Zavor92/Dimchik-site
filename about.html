@@ -1,10 +1,15 @@
 
 	<head>
 		<meta charset="utf-8">
-		<link href="style.css" rel="stylesheet">	
+		<link href="style.css" rel="stylesheet">
+		<script type="text/javascript" src=" https://yastatic.net/jquery/2.2.3/jquery.min.js"></script>
+	    <script type="text/javascript" src="js/carusel.js"></script>
+	    <script type="text/javascript" src="js/valid.js"></script>
+	    <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+		<link rel="stylesheet" href="js/jquery.arcticmodal-0.3.css">
+		<link rel="stylesheet" href="js/themes/simple.css">	
 	</head>
-	<body>
-
+<div class="page-wrapper">
 <div id="header">
 			<div class="wrapper">
 				<div class="fac-logo">
@@ -116,7 +121,9 @@
 		</div>
 		<div class="place">
 			<div class="wrapper">
-				<div class="place-purpose">Место проведения</div>
+			<div class="place-line">
+				<div class="place-line-item" style="width: 456px;">
+					<div class="place-purpose">Место проведения</div>
 				<div class="place-name">
 					Центральная городская библиотека<br> имени А.С. Пушкина. Конференц-зал.
 				</div>
@@ -152,12 +159,38 @@
 						</div>
 					</div>
 				</div>
+				</div>
+				<div class="place-line-item last">
+					<div class="place-slider">
+						<div class="place-arrow-left"></div>
+						<div class="place-arrow-right"></div>
+						<div class="place-slider-wrapper">
+							<div class="place-slider-items">
+								<div class="place-slider-item place-item-1"></div>
+								<div class="place-slider-item place-item-2"></div>
+								<div class="place-slider-item place-item-3"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			</div>
 		</div>
-	</body>
-
-
+		</div>
 		<div id="footer">
+		<div style="display: none;">
+	    <div class="box-modal" id="failModal">
+	        	<div class="box-modal_close arcticmodal-close">закрыть</div>
+	        	Вы ввели не все данные
+	    		</div>
+		</div>
+
+		<div style="display: none;">
+		 <div class="box-modal" id="phoneModal">
+	        	<div class="box-modal_close arcticmodal-close">закрыть</div>
+	        	Неверно введен номер телефона!
+	    		</div>
+	    	</div>	
 			<div class="wrapper">
 				<div class="footer-menu">
 					<div class="about-forum">
@@ -221,4 +254,5 @@
 					</div>
 				</div>
 			</div>
+</div>
 </div>
