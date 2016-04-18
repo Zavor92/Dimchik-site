@@ -1828,6 +1828,8 @@ input[type=checkbox]:not(old):checked + label > span:before{
 .index-parners{
  	padding-bottom: 40px;
     border-bottom: solid 1px #e9e9e9;
+    width: 1280px;
+    margin: 0 auto;
 }
 
 
