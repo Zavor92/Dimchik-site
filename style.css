@@ -24,7 +24,7 @@ body{
     padding: 0;
 }
 
-#failModal , #phoneModal{
+#failModal , #phoneModal, #SuccessModal{
 	font-family: Roboto-Regular;
 	color:#303030;
 }
@@ -189,6 +189,24 @@ a{
 	border-radius: 10px;
 	border: solid 1px #45b4b9;
  }
+
+.reg-button a{
+	color: #45b4b9;
+    display: block;
+    height: 100%;
+}
+
+.reg-button:hover a{
+	color:#fff;	
+}
+
+
+.index-slider-item{}
+
+.more-news a{
+	 display: block;
+	 color: #26a8ad;
+}
 
  .reg-button{
  	color:#45b4b9;
@@ -1303,9 +1321,13 @@ input[type=checkbox]:not(old):checked + label > span:before{
 }
 
 
-.more-news:hover{
+.more-news:hover {
 	background-color: #26a8ad;
 	cursor: pointer;
+	color:#fff;
+}
+
+.more-news:hover a{
 	color:#fff;
 }
 
@@ -1374,6 +1396,10 @@ input[type=checkbox]:not(old):checked + label > span:before{
 	border:solid 1px #26a8ad;
 }
 
+.panel-group{
+	margin-bottom: 0 !important;
+}
+
 .sponosor-txt{
 	background-color: #f4f4f4;
 	font-size: 15px;
@@ -1389,11 +1415,18 @@ input[type=checkbox]:not(old):checked + label > span:before{
 	background-color: #f4f4f4;
 }
 
-.arrow-up{
+.arrow-up, .arrow-down{
 	width: 14px;
 	height: 8px;
-	background-image: url(images/arrow-up.png);
 	display: inline-block;
+}
+
+.arrow-up{
+	background-image: url(images/arrow-up.png);
+}
+
+.arrow-down{
+	background-image: url(images/arrow-down.png);
 }
 
 .panel-title{
@@ -1616,7 +1649,8 @@ input[type=checkbox]:not(old):checked + label > span:before{
 
 
 .index-reg{
-	margin-top: 80px;
+	width: 1280px;
+	margin: 80px auto 0;
 	height: 270px;
 	 background-image: url(images/background-index-2.gif);
     background-repeat: repeat-x;
@@ -1735,6 +1769,8 @@ input[type=checkbox]:not(old):checked + label > span:before{
     font-size: 24px;
     overflow: hidden;
     text-align: center;
+    width: 1280px;
+    margin: 0 auto;
 }
 
 

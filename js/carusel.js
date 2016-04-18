@@ -59,4 +59,12 @@ $(document).ready(function(){
             $(carusel).find(".place-slider-items").css({"left":"0px"}); 
          }); 
       }
+
+      $('.panel-heading a').on('click',function(){
+         var parent = $(this).parent().parent(); 
+         if ( parent.children(".arrow-up").is(".arrow-up") ){
+            $('.panel-heading .arrow-down').addClass("arrow-up").removeClass("arrow-down");
+              parent.children(".arrow-up").addClass("arrow-down").removeClass("arrow-up");
+         }
+      });
 })
