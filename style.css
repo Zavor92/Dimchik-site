@@ -175,6 +175,9 @@ a{
  	color:#45b4b9;
  }
  
+.full-name{
+	font-family: Roboto-Italic;
+}
 
  .reg-button{
  	float: right;
@@ -186,17 +189,16 @@ a{
  	height: 35px;
  	text-align: center;
 	vertical-align: middle;
-	line-height: 30px;
+	line-height: 34px;
 	border-radius: 10px;
 	border: solid 1px #45b4b9;
  }
 
-.reg-button a{
-	color: #45b4b9;
-    display: block;
-    height: 100%;
+.panel-default a:hover{
+	cursor:pointer;
 }
-
+ 
+ 
 .reg-button:visited{
 	color:#45b4b9;
 }
@@ -266,8 +268,9 @@ a{
 	width: 90%;
 }
 
+
 .forum-link{
-	color: #329599;
+	color: #329599 !important;
 	margin-top: 20px;
 	display: block;
 	font-size: 9.6pt;
@@ -275,7 +278,7 @@ a{
 
 .forum-link:hover{
 	cursor: pointer;
-	color:#027aca;
+	color:#027aca !important;
 }
 
 .about-forum {
@@ -469,12 +472,16 @@ textarea:-ms-input-placeholder {
 	position: relative;
 }
 
-.main-forum a,.main-forum a:visited{
-	color:#3366cc;
+.main-forum span a,.main-forum span a:visited{
+	color:#3366cc !important;
 }
 
-.main-forum a:hover{
-	color:#0065FC;
+.main-forum span:hover  a{
+	color:#0065FC !important;
+}
+
+a{
+	text-decoration:none !important;
 }
 
 .header-forum .wrapper{
@@ -499,7 +506,7 @@ textarea:-ms-input-placeholder {
 	font-size: 10pt;
 }
 
-.main-forum .wrapper span{
+.main-forum .wrapper span a{
 	color:#3366cc;
 }
 
@@ -556,7 +563,7 @@ textarea:-ms-input-placeholder {
 	width:102%;
 }
 
-.sponsor-name span{
+.sponsor-name .sponsor-header{
 	font-family: Roboto-Regular;
 	color:#303030;
 	font-size:10.5pt;
@@ -579,32 +586,47 @@ textarea:-ms-input-placeholder {
 	cursor: pointer;
 }
 
-.buttons-reg .reg{
+.buttons-reg a .reg {
+	display:block;
 	background-color: #26a8ad;
-	color:#fff;
+	color:#fff !important;
 }
 
-.buttons-reg .reg a:visited{
-	color:#fff;
+.buttons-reg  a:visited .reg{
+	color:#fff !important;
 }
 
+.buttons-reg   a:visited .forum-contain {
+	color:#249da2;
+}
 
 .buttons-reg .reg:hover{
 	background-color: #249da2;
 }
 
-.buttons-reg .forum-contain{
+.buttons-reg   a .forum-contain {
+	display:block;
 	border:solid 1px #26a8ad;
-	color:#26a8ad;
+	color:#249da2 !important;
 }
 
-.buttons-reg .forum-contain a:visited{
-	color:#26a8ad;
+
+.buttons-reg .btn-reg-link{
+	color:#fff !important;
+	
+}
+
+.buttons-reg .btn-forum-link{
+	color:#26a8ad !important;
+}
+
+.buttons-reg a:visited .forum-contain {
+	color:#26a8ad !important;
 }
 
 
 .buttons-reg .forum-contain:hover{
-	color:#fff;
+	color:#fff !important;
 	background-color: #249da2;
 }
 
@@ -853,7 +875,7 @@ textarea:-ms-input-placeholder {
 	float:right;
 	border-radius: 10px;
 	border: solid 1px #26a8ad;
-	color:#26a8ad;
+	color:#26a8ad !important;
 	font-family: Roboto-Medium;
 	font-size: 15px;
 	text-align: center;
@@ -861,13 +883,9 @@ textarea:-ms-input-placeholder {
 }
 
 .download:hover{
-	cursor: pointer;
+	cursor:pointer;
 	background-color: #26a8ad;
-	color:#fff;
-}
-
-.download:hover a{
-	color:#fff;
+	color:#fff !important;
 }
 
 .line{
@@ -1161,6 +1179,7 @@ input[type=checkbox]:not(old):checked + label > span:before{
 	border:solid 1px #26a8ad;
 	margin:0 auto;
 	margin-top: 60px;
+	background:#fff;
 }
 
 .reg-items{
@@ -1262,14 +1281,11 @@ input[type=checkbox]:not(old):checked + label > span:before{
 .news-item{
 	float: left;
     position: relative;
-    width: 329px;
-    margin-right: 56px;
+    width: 33%;
+    margin-right: 2px;
 }
 
-.news-item-last{
-	margin-right: 0;
-	float: right;
-}
+
 
 .news-item .news-item-date{
 	position: absolute;
@@ -1286,17 +1302,6 @@ input[type=checkbox]:not(old):checked + label > span:before{
     vertical-align: middle;
 }
 
-.news-item-image{
-	width: 329px;
-	height: 250px;
-	background-repeat: no-repeat;
-}
-
-
-.news-1{
-	background-image: url(images/news1.png);
-}
-
 
 .news-item .news-item-header{
 	font-family: Roboto-Medium;
@@ -1307,11 +1312,16 @@ input[type=checkbox]:not(old):checked + label > span:before{
 }
 
 .news-item .news-item-txt{
-	padding-left: 16px;
-    padding-right: 12px;
+	padding-left: 13px;
     margin: 0 auto;
     float: left;
+	width: 89%;
 }
+
+.index-news .news-item .news-item-txt{
+	 width: 83% !important;
+}
+
 
 .news-part-text{
 	font-size: 14px;
@@ -1480,37 +1490,16 @@ input[type=checkbox]:not(old):checked + label > span:before{
 
 .gal-item{
 	float:left;
-	width: 33%;
+	width: 25%;
 	background-repeat: no-repeat;
 	background-position: center center;
-	width: 350px;
-	height: 250px;
 	margin-right: 75px;
-}
-
-.gal-1{
-	background-image: url(images/gallery/gal-1.png);
-}
-
-.gal-2{
-	background-image: url(images/gallery/gal-2.png);
-}
-
-.gal-3{
-	background-image: url(images/gallery/gal-3.png);
 }
 
 .gallery-items .last{
 	margin-right: 0px;
 }
 
-.gal-4{
-	background-image: url(images/gallery/gal-4.png);
-}
-
-.gal-5{
-	background-image: url(images/gallery/gal-5.png);	
-}
 
 /* Галерея */
 
@@ -1603,10 +1592,26 @@ input[type=checkbox]:not(old):checked + label > span:before{
     margin-top: 135px;
 }
 
-.index-item-content .index-reg-btn{
-	width: 364px !important;
+.uppercase{
+	text-transform: uppercase;
+}
+
+.index-item-content .programma-forum-btn{
+	border-radius: 10px;
+    line-height: 60px;
+    background-color: #26a8ad;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 0px 6px black;
+	min-width: 364px;
     float: left;
-    margin-top: 40px !important;
+    margin-top: 40px;
+    padding: 0 20px 0;
+}
+
+.index-item-content .programma-forum-btn:hover{
+	background-color: #249da2;
+    cursor: pointer;
 }
 
 .index-slider-wrapper{
@@ -1640,10 +1645,10 @@ input[type=checkbox]:not(old):checked + label > span:before{
 	font-size: 24px;
 }
 
-.greeting-header span{
-	font-family: Roboto-Italic;
-}
 
+.index-reg-content a:visited{
+	color:#fff;
+}
 
 .greeting-text{
 	float:left;
@@ -1702,12 +1707,21 @@ input[type=checkbox]:not(old):checked + label > span:before{
 	padding: 0 20px 0;
 }
 
+.index-programma-btn a{
+	color:#fff;
+	display: block;
+}
+
+.index-programma-btn a:visited{
+	color:#fff;
+}
+
 .index-reg-btn:hover, .index-programma-btn:hover{
 	background-color: #249da2;
 	cursor: pointer;
 }
 
-.index-news .wrapper, .index-speakers .wrapper, .index-parners .wrapper{
+.index-news .wrapper, .index-speakers .wrapper, .index-partners .wrapper{
 	overflow: hidden;
 	margin: 0 auto;
 	width: 1200px;
@@ -1796,7 +1810,7 @@ input[type=checkbox]:not(old):checked + label > span:before{
 }
 
 
-.index-parners .index-title{
+.index-partners .index-title{
 	color: #303030;
 	border-color: #26a8ad;
 }
@@ -1847,7 +1861,7 @@ input[type=checkbox]:not(old):checked + label > span:before{
     text-align: left;
 }
 
-.index-parners{
+.index-partners{
  	padding-bottom: 40px;
     border-bottom: solid 1px #e9e9e9;
     width: 1280px;
