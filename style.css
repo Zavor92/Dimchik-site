@@ -1490,10 +1490,9 @@ input[type=checkbox]:not(old):checked + label > span:before{
 
 .gal-item{
 	float:left;
-	width: 25%;
+	width: 33%;
 	background-repeat: no-repeat;
 	background-position: center center;
-	margin-right: 75px;
 }
 
 .gallery-items .last{
